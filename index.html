@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://sikola.unhas.ac.id/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style mid.css">
+    <title>covid19 update</title>
+</head>
+<body>
+    <div class="globalStats">
+        <h2>Coronavirus cases:</h2>
+            <div class="mainCases">
+            <span id="mainCases"></span>
+            </div>
+
+        <h2>Deaths:</h2>
+            <div class="mainDeaths">
+            <span id="mainDeaths"></span>
+            </div>
+
+        <h2>Recovered:</h2>
+            <div class="mainRecovered">
+            <span id="mainRecovered"></span>
+            </div>
+    </div>
+    <div class="statistics">
+      <iframe src="https://public.domo.com/cards/bWxVg" width="100%" height="500" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+      <iframe src="https://public.domo.com/cards/avnAV" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+      <iframe src="https://public.domo.com/cards/aKg4r" width="100%" height="500" marginheight="0" marginwidth="0" frameborder="0"></iframe>  
+    </div>
+    
+    <h2>Cases In Asia</h2>
+    <p>You can sort the table by clicking the header</p>
+
+    <table class="table-sortable sticky">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Country</th>
+            <th>Confirmed Cases</th>
+            <th>Recovered</th>
+            <th>Deaths</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>India</td>
+            <td><span id="indiaCases"></span></td>
+            <td><span id="indiaRecovered"></span></td>
+            <td><span id="indiaDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>2</td>
+            <td>Turkey</td>
+            <td><span id="turkeyCases"></span></td>
+            <td><span id="turkeyRecovered"></span></td>
+            <td><span id="turkeyDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Iran</td>
+            <td><span id="iranCases"></span></td>
+            <td><span id="iranRecovered"></span></td>
+            <td><span id="iranDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>4</td>
+            <td>Indonesia</td>
+            <td><span id="indoCases"></span></td>
+            <td><span id="indoRecovered"></span></td>
+            <td><span id="indoDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Iraq</td>
+            <td><span id="iraqCases"></span></td>
+            <td><span id="iraqRecovered"></span></td>
+            <td><span id="iraqDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>6</td>
+            <td>Israel</td>
+            <td><span id="israelCases"></span></td>
+            <td><span id="israelRecovered"></span></td>
+            <td><span id="israelDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Philippines</td>
+            <td><span id="PHCases"></span></td>
+            <td><span id="PHRecovered"></span></td>
+            <td><span id="PHDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>8</td>
+            <td>Pakistan</td>
+            <td><span id="pakistanCases"></span></td>
+            <td><span id="pakistanRecovered"></span></td>
+            <td><span id="pakistanDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Bangladesh</td>
+            <td><span id="bangladeshCases"></span></td>
+            <td><span id="bangladeshRecovered"></span></td>
+            <td><span id="bangladeshDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>10</td>
+            <td>Jordan</td>
+            <td><span id="jordanCases"></span></td>
+            <td><span id="jordanRecovered"></span></td>
+            <td><span id="jordanDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Japan</td>
+            <td><span id="japanCases"></span></td>
+            <td><span id="japanRecovered"></span></td>
+            <td><span id="japanDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>12</td>
+            <td>Lebanon</td>
+            <td><span id="lebanonCases"></span></td>
+            <td><span id="lebanonRecovered"></span></td>
+            <td><span id="lebanonDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>UAE</td>
+            <td><span id="AECases"></span></td>
+            <td><span id="AERecovered"></span></td>
+            <td><span id="AEDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>14</td>
+            <td>Saudi Arabia</td>
+            <td><span id="SAUCases"></span></td>
+            <td><span id="SAURecovered"></span></td>
+            <td><span id="SAUDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Malaysia</td>
+            <td><span id="malayCases"></span></td>
+            <td><span id="malayRecovered"></span></td>
+            <td><span id="malayDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>16</td>
+            <td>Kazakhstan</td>
+            <td><span id="kazakhstanCases"></span></td>
+            <td><span id="kazakhstanRecovered"></span></td>
+            <td><span id="kazakhstanDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Georgia</td>
+            <td><span id="geoCases"></span></td>
+            <td><span id="geoRecovered"></span></td>
+            <td><span id="geoDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>18</td>
+            <td>Nepal</td>
+            <td><span id="nepalCases"></span></td>
+            <td><span id="nepalRecovered"></span></td>
+            <td><span id="nepalDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Azerbaijan</td>
+            <td><span id="azerbaijanCases"></span></td>
+            <td><span id="azerbaijanRecovered"></span></td>
+            <td><span id="azerbaijanDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>20</td>
+            <td>Kuwait</td>
+            <td><span id="kuwaitCases"></span></td>
+            <td><span id="kuwaitRecovered"></span></td>
+            <td><span id="kuwaitDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Armenia</td>
+            <td><span id="armeniaCases"></span></td>
+            <td><span id="armeniaRecovered"></span></td>
+            <td><span id="armeniaDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>22</td>
+            <td>Qatar</td>
+            <td><span id="qatarCases"></span></td>
+            <td><span id="qatarRecovered"></span></td>
+            <td><span id="qatarDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Oman</td>
+            <td><span id="omanCases"></span></td>
+            <td><span id="omanRecovered"></span></td>
+            <td><span id="omanDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>24</td>
+            <td>Bahrain</td>
+            <td><span id="bahrainCases"></span></td>
+            <td><span id="bahrainRecovered"></span></td>
+            <td><span id="bahrainDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>South Korea</td>
+            <td><span id="KRCases"></span></td>
+            <td><span id="KRRecovered"></span></td>
+            <td><span id="KRDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>26</td>
+            <td>China</td>
+            <td><span id="chinaCases"></span></td>
+            <td><span id="chinaRecovered"></span></td>
+            <td><span id="chinaDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>Sri Lanka</td>
+            <td><span id="LKCases"></span></td>
+            <td><span id="LKRecovered"></span></td>
+            <td><span id="LKDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>28</td>
+            <td>Kyrgyzstan</td>
+            <td><span id="kyrgyzstanCases"></span></td>
+            <td><span id="kyrgyzstanRecovered"></span></td>
+            <td><span id="kyrgyzstanDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>Uzbekistan</td>
+            <td><span id="uzbekistanCases"></span></td>
+            <td><span id="uzbekistanRecovered"></span></td>
+            <td><span id="uzbekistanDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>30</td>
+            <td>Singapore</td>
+            <td><span id="singaporeCases"></span></td>
+            <td><span id="singaporeRecovered"></span></td>
+            <td><span id="singaporeDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>Afghanistan</td>
+            <td><span id="afghanistanCases"></span></td>
+            <td><span id="afghanistanRecovered"></span></td>
+            <td><span id="afghanistanDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>32</td>
+            <td>Cyprus</td>
+            <td><span id="cyprusCases"></span></td>
+            <td><span id="cyprusRecovered"></span></td>
+            <td><span id="cyprusDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>Thailand</td>
+            <td><span id="thailandCases"></span></td>
+            <td><span id="thailandRecovered"></span></td>
+            <td><span id="thailandDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>34</td>
+            <td>Maldives</td>
+            <td><span id="maldivesCases"></span></td>
+            <td><span id="maldivesRecovered"></span></td>
+            <td><span id="maldivesDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>35</td>
+            <td>Syria</td>
+            <td><span id="syriaCases"></span></td>
+            <td><span id="syriaRecovered"></span></td>
+            <td><span id="syriaDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>36</td>
+            <td>Tajikistan</td>
+            <td><span id="tajikistanCases"></span></td>
+            <td><span id="tajikistanRecovered"></span></td>
+            <td><span id="tajikistanDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>Mongolia</td>
+            <td><span id="mongoliaCases"></span></td>
+            <td><span id="mongoliaRecovered"></span></td>
+            <td><span id="mongoliaDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>38</td>
+            <td>Yemen</td>
+            <td><span id="yemenCases"></span></td>
+            <td><span id="yemenRecovered"></span></td>
+            <td><span id="yemenDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td>Cambodia</td>
+            <td><span id="cambodiaCases"></span></td>
+            <td><span id="cambodiaRecovered"></span></td>
+            <td><span id="cambodiaDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>40</td>
+            <td>Vietnam</td>
+            <td><span id="vietnamCases"></span></td>
+            <td><span id="vietnamRecovered"></span></td>
+            <td><span id="vietnamDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td>Taiwan</td>
+            <td><span id="taiwanCases"></span></td>
+            <td><span id="taiwanRecovered"></span></td>
+            <td><span id="taiwanDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>42</td>
+            <td>Bhutan</td>
+            <td><span id="BTCases"></span></td>
+            <td><span id="BTRecovered"></span></td>
+            <td><span id="BTDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>Timor-Leste</td>
+            <td><span id="timorlesteCases"></span></td>
+            <td><span id="timorlesteRecovered"></span></td>
+            <td><span id="timorlesteDeaths"></span></td>
+          </tr>
+          <tr class="active-row">
+            <td>44</td>
+            <td>Brunei</td>
+            <td><span id="bruneiCases"></span></td>
+            <td><span id="bruneiRecovered"></span></td>
+            <td><span id="bruneiDeaths"></span></td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>Laos</td>
+            <td><span id="laosCases"></span></td>
+            <td><span id="laosRecovered"></span></td>
+            <td><span id="laosDeaths"></span></td>
+          </tr>
+        </tbody>
+      </table>
+
+<script src=json.js></script>
+<script src=tablesort.js></script>
+
+
+
+</body>
